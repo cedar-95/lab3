@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>&Lcy;&acy;&bcy;&ocy;&rcy;&acy;&tcy;&ocy;&rcy;&ncy;&acy;&yacy; &rcy;&acy;&bcy;&ocy;&tcy;&acy; &numero; 3</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <span id="markdown-mermaid" aria-hidden="true" data-config="{&quot;darkModeTheme&quot;:&quot;vscode&quot;,&quot;lightModeTheme&quot;:&quot;vscode&quot;,&quot;maxTextSize&quot;:50000,&quot;clickDrag&quot;:&quot;alt&quot;,&quot;showControls&quot;:&quot;onHoverOrFocus&quot;,&quot;resizable&quot;:true,&quot;maxHeight&quot;:&quot;&quot;}"></span>
+				<h1 id="лабораторная-работа--3">Лабораторная работа № 3</h1>
+<h2 id="настройка-прав-доступа">Настройка прав доступа</h2>
+<p><strong>Студент:</strong> Чжу Ино<br>
+<strong>Группа:</strong> НПИбд-03-25<br>
+<strong>Студенческий билет:</strong> 1132258331</p>
+<hr>
+<h3 id="31-цель-работы">3.1. Цель работы</h3>
+<p>Получение навыков настройки базовых и специальных прав доступа для групп пользователей в операционной системе типа Linux.</p>
+<hr>
+<h3 id="32-выполнение-работы">3.2. Выполнение работы</h3>
+<h4 id="321-управление-базовыми-разрешениями">3.2.1. Управление базовыми разрешениями</h4>
+<p><strong>1. Создание каталогов /data/main и /data/third</strong>
+Выполнена команда <code>sudo mkdir -p /data/main /data/third</code> и просмотр владельцев через <code>ls -Al /data</code>.
+<img src="file:///c:\Users\朱怡诺\Desktop\新建文件夹 (3)\新建文件夹 (5)\01_create_data_dirs.png" alt="Создание каталогов"></p>
+<p><strong>2. Изменение владельцев каталогов</strong>
+Выполнены команды <code>sudo chgrp main /data/main</code> и <code>sudo chgrp third /data/third</code>. Проверка через <code>ls -Al /data</code>.
+<img src="file:///c:\Users\朱怡诺\Desktop\新建文件夹 (3)\新建文件夹 (5)\02_change_group_owners.png" alt="Изменение владельцев"></p>
+<p><strong>3. Установка разрешений 770</strong>
+Выполнены команды <code>sudo chmod 770 /data/main</code> и <code>sudo chmod 770 /data/third</code>. Проверка через <code>ls -Al /data</code>.
+<img src="file:///c:\Users\朱怡诺\Desktop\新建文件夹 (3)\新建文件夹 (5)\03_set_permissions_770.png" alt="Установка разрешений 770"></p>
+<p><strong>4. Проверка доступа пользователя bob к /data/main</strong>
+Под пользователем bob выполнен переход в <code>/data/main</code> и создан файл <code>emptyfile</code>.
+<img src="file:///c:\Users\朱怡诺\Desktop\新建文件夹 (3)\新建文件夹 (5)\04_bob_access_main.png" alt="Доступ bob к /data/main"></p>
+<p><strong>5. Проверка доступа пользователя bob к /data/third</strong>
+Под пользователем bob предпринята попытка перейти в <code>/data/third</code> и создать файл. Получен отказ в доступе.
+<img src="file:///c:\Users\朱怡诺\Desktop\新建文件夹 (3)\新建文件夹 (5)\05_bob_denied_third.png" alt="Отказ доступа bob к /data/third"></p>
+<hr>
+<h4 id="322-управление-специальными-разрешениями">3.2.2. Управление специальными разрешениями</h4>
+<p><strong>6. Установка SGID и Sticky bit</strong>
+Выполнены команды <code>sudo chmod 2770 /data/main</code> и <code>sudo chmod 1770 /data/third</code>. Проверка через <code>ls -ld</code>.
+<img src="file:///c:\Users\朱怡诺\Desktop\新建文件夹 (3)\新建文件夹 (5)\06_set_sgid_sticky.png" alt="Установка SGID и Sticky bit"></p>
+<p><strong>7. Проверка SGID</strong>
+Под пользователем alice создан файл в <code>/data/main</code>. Проверено, что файл наследует группу <code>main</code>.
+<img src="file:///c:\Users\朱怡诺\Desktop\新建文件夹 (3)\新建文件夹 (5)\07_verify_sgid.png" alt="Проверка SGID"></p>
+<p><strong>8. Проверка Sticky bit</strong>
+Под пользователем bob создан файл в <code>/data/third</code>. Под пользователем carol предпринята попытка удалить этот файл. Получен отказ.
+<img src="file:///c:\Users\朱怡诺\Desktop\新建文件夹 (3)\新建文件夹 (5)\08_verify_sticky_bit.png" alt="Проверка Sticky bit"></p>
+<hr>
+<h4 id="323-управление-расширенными-разрешениями-с-использованием-acl">3.2.3. Управление расширенными разрешениями с использованием ACL</h4>
+<p><strong>9. Установка ACL</strong>
+Выполнены команды <code>sudo setfacl -m g:third:rx /data/main</code> и <code>sudo setfacl -m g:main:rx /data/third</code>. Проверка через <code>getfacl</code>.
+<img src="file:///c:\Users\朱怡诺\Desktop\新建文件夹 (3)\新建文件夹 (5)\09_set_acl.png" alt="Установка ACL"></p>
+<p><strong>10. Проверка ACL для нового файла</strong>
+Создан файл <code>newfile1</code> в <code>/data/main</code>. Проверено наследование ACL через <code>getfacl</code>.
+<img src="file:///c:\Users\朱怡诺\Desktop\新建文件夹 (3)\新建文件夹 (5)\10_acl_newfile1.png" alt="ACL нового файла"></p>
+<p><strong>11. Установка ACL по умолчанию</strong>
+Выполнены команды <code>sudo setfacl -m d:g:third:rx /data/main</code> и <code>sudo setfacl -m d:g:main:rx /data/third</code>.
+setfacl -m d:g:groupname:permissions /path
+<img src="file:///c:\Users\朱怡诺\Desktop\新建文件夹 (3)\新建文件夹 (5)\11_set_default_acl.png" alt="Установка ACL по умолчанию"></p>
+<p><strong>12. Проверка наследования ACL</strong>
+Создан файл <code>newfile2</code> в <code>/data/main</code>. Проверено автоматическое наследование ACL через <code>getfacl</code>.
+getfacl /path
+<img src="file:///c:\Users\朱怡诺\Desktop\新建文件夹 (3)\新建文件夹 (5)\12_verify_default_acl.png" alt="Наследование ACL"></p>
+<p><strong>13. Удаление ACL</strong>
+Для удаления записи ACL используется команда:
+setfacl -x g:groupname /path
+<strong>14. Защита файла от случайного удаления</strong>
+Чтобы никто не смог случайно удалить файл <code>myfile</code>, необходимо установить sticky bit на каталог:
+chmod +t /path/to/directory</p>
+<h3 id="33-вывод">3.3. Вывод</h3>
+<p>В ходе лабораторной работы были изучены механизмы настройки базовых и специальных прав доступа в Linux. Освоены команды <code>chgrp</code>, <code>chmod</code>, <code>getfacl</code>, <code>setfacl</code>. Изучены механизмы SGID, Sticky bit и списков ACL. Настроены права доступа для каталогов <code>/data/main</code> и <code>/data/third</code>, проверено наследование прав для новых файлов.</p>
+<hr>
+<h3 id="34-ответы-на-контрольные-вопросы">3.4. Ответы на контрольные вопросы</h3>
+<ol>
+<li>
+<p><strong>Какие команды используются для изменения владельца и группы файла?</strong></p>
+<ul>
+<li><code>chown</code> — изменение владельца</li>
+<li><code>chgrp</code> — изменение группы</li>
+</ul>
+</li>
+<li>
+<p><strong>Что означают права доступа 770?</strong></p>
+<ul>
+<li>Владелец: <code>rwx</code> (7)</li>
+<li>Группа: <code>rwx</code> (7)</li>
+<li>Остальные: <code>---</code> (0)</li>
+</ul>
+</li>
+<li>
+<p><strong>Что такое SGID и зачем он нужен?</strong>
+SGID — специальный бит, при установке на каталог новые файлы наследуют группу-владельца каталога, а не группу создателя.</p>
+</li>
+<li>
+<p><strong>Что такое Sticky bit?</strong>
+Sticky bit — специальный бит, при установке на каталог удалять файлы может только их владелец (или root). Используется в общих каталогах, например <code>/tmp</code>.</p>
+</li>
+<li>
+<p><strong>Что такое ACL и зачем они нужны?</strong>
+ACL (Access Control List) — список управления доступом, позволяющий задавать права для конкретных пользователей и групп, выходя за рамки стандартной модели <code>rwx</code>.</p>
+</li>
+<li>
+<p><strong>Как установить ACL для группы?</strong>
+setfacl -m g:groupname:permissions /path</p>
+</li>
+<li>
+<p><strong>Как установить ACL по умолчанию?</strong>
+setfacl -m d:g:groupname:permissions /path</p>
+</li>
+<li>
+<p><strong>Как посмотреть текущие ACL?</strong>
+getfacl /path</p>
+</li>
+<li>
+<p><strong>Как удалить ACL?</strong>
+setfacl -x g:groupname /path</p>
+</li>
+<li>
+<p><strong>Какая команда гарантирует, что никто не сможет удалить файл myfile случайно?</strong></p>
+</li>
+</ol>
+<p>Установка sticky bit на каталог:
+chmod +t /path/to/directory</p>
+
+            
+            
+        </body>
+        </html>

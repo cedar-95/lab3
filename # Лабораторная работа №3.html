@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>&Lcy;&acy;&bcy;&ocy;&rcy;&acy;&tcy;&ocy;&rcy;&ncy;&acy;&yacy; &rcy;&acy;&bcy;&ocy;&tcy;&acy; &numero; 3</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <span id="markdown-mermaid" aria-hidden="true" data-config="{&quot;darkModeTheme&quot;:&quot;vscode&quot;,&quot;lightModeTheme&quot;:&quot;vscode&quot;,&quot;maxTextSize&quot;:50000,&quot;clickDrag&quot;:&quot;alt&quot;,&quot;showControls&quot;:&quot;onHoverOrFocus&quot;,&quot;resizable&quot;:true,&quot;maxHeight&quot;:&quot;&quot;}"></span>
+				<h1 id="лабораторная-работа--3">Лабораторная работа № 3</h1>
+<h2 id="настройка-прав-доступа">Настройка прав доступа</h2>
+<p><strong>Студент:</strong> Чжу Ино<br>
+<strong>Группа:</strong> НПИбд-03-25<br>
+<strong>Студенческий билет:</strong> 1132258331</p>
+<h2 id="цель-работы">Цель работы</h2>
+<p>Получение навыков настройки базовых и специальных прав доступа для групп пользователей в операционной системе типа Linux.</p>
+<h2 id="среда-выполнения">Среда выполнения</h2>
+<ul>
+<li>
+<p>ОС: Rocky Linux 10.2</p>
+</li>
+<li>
+<p>Оболочка: Bash</p>
+</li>
+<li>
+<p>Инструменты: chmod, chgrp, setfacl, getfacl</p>
+</li>
+<li>
+<h2 id="управление-базовыми-разрешениями">Управление базовыми разрешениями</h2>
+</li>
+<li>
+<p>Создание каталогов <code>/data/main</code> и <code>/data/third</code></p>
+</li>
+<li>
+<p>Изменение владельцев: <code>chgrp main /data/main</code>, <code>chgrp third /data/third</code></p>
+</li>
+<li>
+<p>Установка разрешений 770: <code>chmod 770 /data/main</code>, <code>chmod 770 /data/third</code></p>
+</li>
+<li>
+<p>Проверка доступа пользователя bob</p>
+</li>
+<li>
+<h2 id="управление-специальными-разрешениями">Управление специальными разрешениями</h2>
+</li>
+<li>
+<p>SGID: <code>chmod 2770 /data/main</code> — новые файлы наследуют группу каталога</p>
+</li>
+<li>
+<p>Sticky bit: <code>chmod 1770 /data/third</code> — удалять файлы может только владелец</p>
+</li>
+<li>
+<p>Проверка SGID под alice</p>
+</li>
+<li>
+<p>Проверка Sticky bit под carol</p>
+</li>
+<li>
+<h2 id="управление-acl">Управление ACL</h2>
+</li>
+<li>
+<p>Установка ACL: <code>setfacl -m g:third:rx /data/main</code></p>
+</li>
+<li>
+<p>Установка ACL: <code>setfacl -m g:main:rx /data/third</code></p>
+</li>
+<li>
+<p>Просмотр ACL: <code>getfacl /data/main</code>, <code>getfacl /data/third</code></p>
+</li>
+<li>
+<h2 id="acl-по-умолчанию-и-наследование">ACL по умолчанию и наследование</h2>
+</li>
+<li>
+<p>Установка: <code>setfacl -m d:g:third:rx /data/main</code></p>
+</li>
+<li>
+<p>Установка: <code>setfacl -m d:g:main:rx /data/third</code></p>
+</li>
+<li>
+<p>Проверка наследования: <code>getfacl /data/main/newfile2</code></p>
+</li>
+<li>
+<h2 id="удаление-acl-и-защита-файлов">Удаление ACL и защита файлов</h2>
+</li>
+<li>
+<p>Удаление ACL: <code>setfacl -x g:groupname /path</code></p>
+</li>
+<li>
+<p>Защита от случайного удаления: <code>chmod +t /path/to/directory</code> (sticky bit)</p>
+</li>
+<li>
+<h2 id="вывод">Вывод</h2>
+</li>
+</ul>
+<p>В ходе лабораторной работы были изучены механизмы настройки базовых и специальных прав доступа в Linux. Освоены команды <code>chgrp</code>, <code>chmod</code>, <code>getfacl</code>, <code>setfacl</code>. Изучены механизмы SGID, Sticky bit и списков ACL.</p>
+<h2 id="спасибо-за-внимание">Спасибо за внимание!</h2>
+
+            
+            
+        </body>
+        </html>
